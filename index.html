@@ -4,76 +4,87 @@
   <style>
   
   body {
-	background-color:Peru; 
+	background-color: #e9c097; 
 	margin:auto; 
 	padding:0; 
 	font-family:Cambria; 
 	max-width: 1366px; 
 	max-height: 768px; 
+	min-width: 960 px;
   }
   
   h1 {
 	font-size:40px; 
-	color:SeaShell; 
+	color: #180000; 
 	border-style:outset;
 	text-align:center; 
-	background-color: SaddleBrown
+	background-color: #d9924b;
   }
   
   #welcome {
 	text-align:center; 
 	font-size: 20px; 
-	color:FloralWhite;
+	color: #630f02;
   }
   
   #list {
-	float: left; 
-	width: 500px;
-	color: DarkRed;
+	color: #550000;
 	font-size: 20px;
   }
   
   #stylelist {
 	font-size: 16px;
-	color: FireBrick;
+	color: #550000;
   }
   
   .link {
 	text-align: center;
 	font-size: 20px;
-	color: FireBrick;
+	color: #550000;
   }
   
-  #img1 {
-	float: right; 
-	margin: 20px 20px 150px 20px; 
+  .column {
+	float: left;
 	width: 50%;
-	display: block;
   }
   
-  table {
-	width: 300px; 
-	margin-left: 850px;
-	border: 1px solid red; 
+  table { 
 	font-family: Cambria; 
 	font-size: 25px; 
 	text-align:center; 
-	color: FloralWhite;
+	color: #52082d;
+	width: 60%;
+	margin: 50px 120px;
+  }
+  
+  #img {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 20px;
   }
   
   #end {
-	font-size: 18px; 
-	color: Purple; 
+	font-size: 18 px;
+	color: #50004b;
 	text-align: center;
+	padding-top: 20px;
   }
   
   #img2 {
-	margin: 20px 350px 200px 350px;
+	width: 20%;
+	margin: 20px 250px;
   }
   
-  #footer {
+  
+  footer {
+	position: relative; 
+	width: 50%;
+  }
+  
+  h5 {
 	font-size: 15 px;
-	color: pink;
+	color: #512946;
   }
   
   </style>
@@ -87,10 +98,8 @@
 		<h1>Good Emplyoee- Guide</h1>
 		<p id="welcome">Welcome to the guide with basic information of how to be a Good Employee. <br>Below you will find few hints which will help you to become good if not the best employee!<br><strong>Have fun and good luck!</strong></p>
 	</div>
-	<br>
-	<br>
 	
-	<div id="list">
+	<div class="column" id="list">
 		<ol>
 			<li><strong>Definitions:</strong>
 				<ul id="stylelist">
@@ -119,19 +128,15 @@
 		
 	</div>
 	
-	<div id="img1">
-		<img src="http://cdn.hrpayrollsystems.net/wp-content/uploads/2015/01/keeping-employees-happy-700x300.jpg" alt="I <3 my job"/>
-	</div>
-	
-	<div>
+	<div class="column">
+		<img id="img" src="http://cdn.hrpayrollsystems.net/wp-content/uploads/2015/01/keeping-employees-happy-700x300.jpg" alt="I <3 my job"/>
+
 		<table>
+			<caption><strong><em>Three most important things</em></strong><caption>
 				<thead>
 					<tr>
-						<th colspan="2">3 most important things</th>
-					</tr>
-					<tr>
-						<th>Key Word</th>
-						<th>%</th>
+						<th>What</th>
+						<th id="%">%</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -146,22 +151,16 @@
 					<tr>
 						<td>Dress Code</td>
 						<td>20%</td>
-				</tbody>	
+				</tbody>
 		</table>
-	</div>
 	
-	<br>
-	<br>
-	<br>
-	<br>
-	
-	<div id="end">
-		<p><strong>Hope this few words was useful. Click picture below to find a job. Good luck!</strong></p>
+		<p id="end"><strong>Hope this few words was useful. Click picture below to find a job. Good luck!</strong></p>
 		<a href="http://www.infopraca.pl/"><img id="img2" src="http://static.infopraca.pl/static/vad0e1bbe2619/pl/pl/new/img/logos/header.png" alt="Info Praca logo"></a>
 	</div>
 	
-	<div id="footer">
-		<h5>Good Employee Guide made by Zofia Kozłowicz-Eid. If you have any questions <a href="mailto:zosia.kozlowicz@gmail.com subject:Guide Questions">Send me e-mail.</h5></a>
-	</div>
+	<footer>
+		<h5>Good Employee Guide made by Zofia Kozlowicz-Eid. If you have any questions <a href="mailto:zosia.kozlowicz@gmail.com subject:Guide Questions">Send me e-mail.</h5></a>
+	</footer>
+	
   </body>
 </html>
